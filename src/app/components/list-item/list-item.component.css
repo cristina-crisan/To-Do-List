@@ -1,0 +1,44 @@
+ul{
+  padding:0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display:flex;
+}
+
+li span{
+  flex-grow: 1; 
+  margin-right:10px;
+}
+
+span:focus-visible{
+  outline: 0;
+}
+
+.delete{
+  color:red;
+  font-style:oblique;
+  font-size:16px;
+}
+
+.check{
+  font-weight: 600;
+  font-style:oblique;
+  font-size:16px;
+}
+
+.checked{
+  color:green;
+}
+
+.line{
+  text-decoration: line-through;
+}
+
+button{
+  border:none;
+  background-color: transparent;
+  padding:0;
+}

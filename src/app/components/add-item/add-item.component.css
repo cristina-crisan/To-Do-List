@@ -1,0 +1,10 @@
+input{
+  border:none;
+  font-family: 'Dancing Script', cursive;
+  font-size:19px;
+  background-color: transparent;
+}
+
+input:focus{
+  outline: none;
+}

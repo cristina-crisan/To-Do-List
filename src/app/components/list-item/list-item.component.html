@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let item of items">
+    <div class="action">
+      <button (click)="check(item)">
+        <span class="check checked" *ngIf="item.isChecked">&#10003;</span>
+        <span class="check" *ngIf="!item.isChecked">&#10003;</span>
+      </button>
+    </div>
+    <span [class.line]="item.isChecked" contenteditable (blur)="update(item, $event)"
+      (keydown.enter)="update(item, $event)">{{item.name}}</span>
+    <div class="action">
+      <button (click)="delete(item)" class="delete">&#x2718;</button>
+    </div>
+  </li>
+</ul>

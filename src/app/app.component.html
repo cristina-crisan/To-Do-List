@@ -1,0 +1,14 @@
+<div class="paper">
+  <div class="pattern">
+    <div class="content">
+      <app-header></app-header>
+      <br>
+      <app-add-item (onAddItem)="onAddItem($event)"></app-add-item>
+      <br>
+      <br>
+      <app-list-item [items]="arrayOfItems" (onDelete)="onDelete($event)" (onUpdate)="onUpdate($event)"
+        (onCheck)="onCheck()"></app-list-item>
+    </div>
+  </div>
+</div>
+<app-modal></app-modal>

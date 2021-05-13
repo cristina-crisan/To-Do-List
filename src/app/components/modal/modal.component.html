@@ -1,0 +1,7 @@
+<div *ngIf="display$ | async as display">
+  <section [class.open]="display === 'open'" (click)="close()">
+    <div class="message">
+      <h1>{{message}}</h1>
+    </div>
+  </section>
+  <div>
